@@ -1,7 +1,5 @@
 #include "hblk_crypto.h"
 
-#define PATH_MAX 256
-
 /**
  * ec_save - Saves EC key pair to disk
  * @key: EC key pair to save
