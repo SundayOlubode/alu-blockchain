@@ -7,12 +7,15 @@
 #include <stdint.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <limits.h>
+#include <errno.h>
 
 #include <openssl/sha.h>
 #include <openssl/evp.h>
 #include <openssl/bio.h>
 #include <openssl/err.h>
 #include <openssl/ec.h>
+#include <openssl/pem.h>
 
 #define EC_PUB_LEN 65
 #define EC_CURVE NID_secp256k1
