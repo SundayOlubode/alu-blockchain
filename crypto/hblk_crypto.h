@@ -1,5 +1,3 @@
-// #define OPENSSL_API_COMPAT 30002
-
 #ifndef HBLK_CRYPTO_H
 #define HBLK_CRYPTO_H
 
