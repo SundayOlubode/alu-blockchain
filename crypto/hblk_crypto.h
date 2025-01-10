@@ -19,7 +19,6 @@
 #define EC_PUB_LEN 65
 #define EC_CURVE NID_secp256k1
 #define SIG_MAX_LEN 72
-#define PATH_MAX 256
 
 /**
  * struct sig_s - EC Signature structure
