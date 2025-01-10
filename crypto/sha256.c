@@ -17,21 +17,3 @@ uint8_t *sha256(int8_t const *s, size_t len, uint8_t digest[SHA256_DIGEST_LENGTH
 
         return SHA256((const unsigned char *)s, len, digest);
 }
-
-// int main(void)
-// {
-//         uint8_t digest[SHA256_DIGEST_LENGTH];
-//         uint8_t *hash;
-//         size_t len = 9;
-//         int8_t const *message = "Holberton";
-
-//         hash = sha256(message, len, digest);
-//         if (!hash)
-//         {
-//                 printf("sha256() failed\n");
-//         }
-
-//         printf("SHA256 Hash: ");
-
-//         return (0);
-// }
