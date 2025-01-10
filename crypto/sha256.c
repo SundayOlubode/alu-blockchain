@@ -15,5 +15,5 @@ uint8_t *sha256(int8_t const *s, size_t len,
 	{
 		return (NULL);
 	}
-	return SHA256((const unsigned char *)s, len, digest);
+	return (SHA256((const unsigned char *)s, len, digest));
 }
