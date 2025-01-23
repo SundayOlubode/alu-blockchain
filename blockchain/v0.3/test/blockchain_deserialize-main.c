@@ -7,10 +7,10 @@
 void _blockchain_print_brief(blockchain_t const *blockchain);
 
 /**
-* main - Entry point
-*
-* Return: EXIT_SUCCESS or EXIT_FAILURE
-*/
+ * main - Entry point
+ *
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
 int main(void)
 {
 	blockchain_t *blockchain;

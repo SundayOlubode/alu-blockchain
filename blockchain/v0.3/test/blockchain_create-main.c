@@ -10,10 +10,10 @@ void _blockchain_print(blockchain_t const *blockchain);
 void _blockchain_destroy(blockchain_t *blockchain);
 
 /**
-* main - Entry point
-*
-* Return: EXIT_SUCCESS or EXIT_FAILURE
-*/
+ * main - Entry point
+ *
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
 int main(void)
 {
 	blockchain_t *blockchain;
@@ -25,7 +25,7 @@ int main(void)
 
 	blockchain2 = blockchain_create();
 	if (memcmp(llist_get_head(blockchain->chain),
-		llist_get_head(blockchain2->chain), sizeof(block_t)) != 0)
+		   llist_get_head(blockchain2->chain), sizeof(block_t)) != 0)
 	{
 		fprintf(stderr, "Genesis Block should always be the same\n");
 		_blockchain_destroy(blockchain);

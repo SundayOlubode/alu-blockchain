@@ -1,15 +1,14 @@
 #include "blockchain.h"
 
-
 /**
-* hash_matches_difficulty - checks if hash matches difficulty
-* @hash: hash to check
-* @difficulty: difficulty of a block
-* Return: 1 if hash matches difficulty, 0 otherwise
-*/
+ * hash_matches_difficulty - checks if hash matches difficulty
+ * @hash: hash to check
+ * @difficulty: difficulty of a block
+ * Return: 1 if hash matches difficulty, 0 otherwise
+ */
 int hash_matches_difficulty(uint8_t const hash[SHA256_DIGEST_LENGTH],
 
-uint32_t difficulty)
+			    uint32_t difficulty)
 {
 	uint32_t i, mod, byte, bit;
 
@@ -30,4 +29,3 @@ uint32_t difficulty)
 	}
 	return (1);
 }
-
