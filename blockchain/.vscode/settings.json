@@ -1,7 +1,5 @@
 {
   "files.associations": {
-    "hblk_crypto.h": "c",
-    "sha.h": "c",
     "blockchain.h": "c"
   }
 }
