@@ -8,7 +8,7 @@
  * Return: pointer to new block or NULL
  */
 block_t *block_create(block_t const *prev, int8_t const *data,
-	uint32_t data_len)
+		      uint32_t data_len)
 {
 	block_t *block = calloc(1, sizeof(*block));
 	llist_t *transactions = llist_create(MT_SUPPORT_FALSE);

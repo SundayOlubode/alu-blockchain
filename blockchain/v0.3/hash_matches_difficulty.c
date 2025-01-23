@@ -30,7 +30,7 @@ uint32_t get_difficulty(uint8_t const hash[SHA256_DIGEST_LENGTH])
  * Return: 1 if matches else 0
  */
 int hash_matches_difficulty(uint8_t const hash[SHA256_DIGEST_LENGTH],
-	uint32_t difficulty)
+			    uint32_t difficulty)
 {
 	if (!hash)
 		return (0);

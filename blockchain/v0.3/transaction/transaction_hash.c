@@ -13,7 +13,7 @@ int hash_outputs(llist_node_t node, unsigned int idx, void *arg);
  *         Otherwise, return a pointer to the hash_buf.
  */
 uint8_t *transaction_hash(transaction_t const *transaction,
-uint8_t hash_buf[SHA256_DIGEST_LENGTH])
+			  uint8_t hash_buf[SHA256_DIGEST_LENGTH])
 {
 	ssize_t len;
 	uint8_t *_buf, *buf;
@@ -21,8 +21,7 @@ uint8_t hash_buf[SHA256_DIGEST_LENGTH])
 	if (!transaction)
 		return (NULL);
 
-	len = SHA256_DIGEST_LENGTH * 3 * llist_size(transaction->inputs)
-		+ SHA256_DIGEST_LENGTH * llist_size(transaction->outputs);
+	len = SHA256_DIGEST_LENGTH * 3 * llist_size(transaction->inputs) + SHA256_DIGEST_LENGTH * llist_size(transaction->outputs);
 	_buf = buf = calloc(1, len);
 	if (!_buf)
 		return (NULL);
@@ -33,11 +32,8 @@ uint8_t hash_buf[SHA256_DIGEST_LENGTH])
 	free(_buf);
 	return (hash_buf);
 
-
 	return (hash_buf);
 }
-
-
 
 /**
  * hash_inputs - llist action func to hash inputs
